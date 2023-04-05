@@ -1,0 +1,129 @@
+
+<!-- favicon  -->
+<link rel="shortcut icon" type="image/jpg" href="images/favicon/icon128.png"/>
+
+<!-- Scroll Bar  -->
+
+<style>
+
+body {
+    /* overlay scrollbar to transparent */
+    overflow: overlay;
+}
+
+  ::-webkit-scrollbar {
+    /* rounded thumb size : set as 20px */
+    width: 15px;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+  /* scroll bar traparent : initalizing colorless & border radius as zero */
+  border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  /* rounded thumb : Border Radius */
+  border-radius: 20px;
+
+  /* height of thumb */
+  height: 40px;
+
+  /* thumb color */
+  background-color:rgb(179,0,255); background: linear-gradient(90deg, rgba(179,0,255,1) 5%, rgba(231,0,255,1) 50%, rgba(255,0,254,1) 95%);
+  }
+  
+  /* thumb hover color */
+  ::-webkit-scrollbar-thumb:hover {
+  background-color:rgb(179,0,255); background: linear-gradient(-90deg, rgba(179,0,255,1) 0%, rgba(231,0,255,1) 51%, rgba(255,0,254,1) 100%); 
+  }
+  
+  </style>
+
+ <!-- Scroll Bar Ended  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Upscale Little</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <img src="images/logo.png" class="logo">
+
+        <div class="content">
+            
+            <p>Website is Under Development</p>
+            <h1>We're <span>Launching</span> Soon</h1>
+
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+            <button type="button">Get In Touch
+            <img src="images/triangle.png">
+        </button>
+
+        </div>
+        <img src="images/rocket.png" alt="" class="rocket">
+    </div>
+    
+    <script>
+
+        var countDownDate = new Date("Jun 12, 2023 00:00:00").getTime();
+        var x = setInterval(
+            
+        function()
+        
+        {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        }
+        
+        ,1000
+        
+        );
+
+    </script>
+
+</body>
+</html>

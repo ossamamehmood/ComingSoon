@@ -1,0 +1,14 @@
+21:30:45:540 [ALWAYS]	GUDE Logging Started
+21:30:45:541 [INFO]	SqliteResumeCache::SqliteResumeCache basedirectory is null/empty
+21:30:45:541 [ERROR]	SqliteResumeCache::CreateSqliteResumeCache creating resume cache pointer failure
+21:30:45:541 [ERROR]	Initialize resume cache pointer failure
+21:30:45:541 [INFO]	gude policy POLICY_USER limit (2,2,1) chunk 2097152, chunking (UL 0 DL 1), resXfer 1, adapt 0, NSURL 0, timeout 86400 
+21:30:45:541 [INFO]	Initialized -- gude-lib version: v0.12.1 app: gude
+21:30:48:542 [WARN]	Ignoring attempt to reinit logging to \gude at level 4 retaining 3 days of logs
+21:30:48:542 [INFO]	SqliteResumeCache::SqliteResumeCache basedirectory is null/empty
+21:30:48:542 [ERROR]	SqliteResumeCache::CreateSqliteResumeCache creating resume cache pointer failure
+21:30:48:542 [ERROR]	Initialize resume cache pointer failure
+21:30:48:543 [INFO]	gude policy POLICY_USER limit (4,4,1) chunk 2097152, chunking (UL 0 DL 1), resXfer 1, adapt 0, NSURL 1, timeout 86400 
+21:30:48:543 [INFO]	Initialized -- gude-lib version: v0.12.1 app: gude
+21:30:49:803 [WARN]	proxy setting delay exceeds threshold: 0.552201 secs
+21:30:49:806 [WARN]	proxy setting delay exceeds threshold: 0.551551 secs
